@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">TodoApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="underline_add"><u>Add</u></string>
+
+    <string name="todo">todo</string>
+    <string name="jump">跳转</string>
+    <string name="hello">Hello\nPeng Guofei</string>
+    <string name="create_a_task">Create a task</string>
+    <string name="task_priority">Task Priority</string>
+    <string name="choose_date">Choose Date</string>
+    <string name="choose_tag">Choose Tag</string>
+    <string name="task_description">Task Description</string>
+    <string name="task_title">Task Title</string>
+    <string name="task_name">task name</string>
+    <string name="high">High</string>
+    <string name="middle">Middle</string>
+    <string name="low">Low</string>
+    <string name="select_a_date">Select a date</string>
+    <string name="delete">Delete</string>
+    <string name="save">Save</string>
+    <string name="empty_to_do_create_a_task">Empty to-do,create a task</string>
+    <string name="add_new">Add New</string>
+    <string name="android">Android</string>
+    <string name="desc_test">A user interface element that displays text to the user. To provide user-editable text, see EditText. The following code sample shows a typical use, with an XML layout and code to modify the contents of the text view</string>
+    <string name="date">2021–8-3</string>
+    <string name="have_lesson_of_android">Have lesson of Android</string>
+    <string name="schedules">Schedules</string>
+
+</resources>

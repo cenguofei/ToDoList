@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/topTaskContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/round_solid_shape"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/priority"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/toDotitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:maxLines="2"
+            android:text="Have lesson of Android"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/ctime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="no deadline"
+            android:textColor="@color/light_gray"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="@+id/toDotitle"
+            app:layout_constraintTop_toBottomOf="@+id/toDotitle" />
+
+        <TextView
+            android:id="@+id/tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_solid_shape"
+            android:backgroundTint="#FDE4E3"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="Android"
+            android:textColor="#ED8E87"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/pen"
+            app:layout_constraintStart_toStartOf="@+id/ctime" />
+
+        <ImageView
+            android:id="@+id/pen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/pen"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/toDotitle"
+            app:layout_constraintTop_toBottomOf="@+id/ctime"
+            app:layout_constraintVertical_bias="1.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8.3"
+        app:layout_constraintBottom_toBottomOf="@+id/topTaskContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/topTaskContainer" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="4dp"
+        android:layout_height="0dp"
+        android:background="#DCDEEB"
+        app:layout_constraintBottom_toBottomOf="@+id/topTaskContainer"
+        app:layout_constraintEnd_toEndOf="@+id/priority"
+        app:layout_constraintStart_toStartOf="@+id/priority"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/priority"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/topTaskContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/topTaskContainer"
+        app:srcCompat="@drawable/red_plate" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".fragment.detail.AddTagDialogFragment">
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:background="@color/dark_purple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ToDo Mark"
+        android:textColor="#FAF7F7"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="@+id/view2" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <EditText
+        android:id="@+id/tagNameEditText"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/round_solid_shape"
+        android:backgroundTint="#F6F8FA"
+        android:ems="10"
+        android:hint="name"
+        android:inputType="textPersonName"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="background color"
+        app:layout_constraintStart_toStartOf="@+id/tagNameEditText"
+        app:layout_constraintTop_toBottomOf="@+id/tagNameEditText" />
+
+    <View
+        android:id="@+id/color1"
+        android:layout_width="73dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:background="#ff8b7c"
+        android:tag="#ff8b7c"
+        app:layout_constraintEnd_toStartOf="@+id/color2"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <View
+        android:id="@+id/color2"
+        android:layout_width="73dp"
+        android:layout_height="35dp"
+        android:background="#9bcd9b"
+        android:tag="#9bcd9b"
+        app:layout_constraintEnd_toStartOf="@+id/color3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/color1"
+        app:layout_constraintTop_toTopOf="@+id/color1" />
+
+    <View
+        android:id="@+id/color3"
+        android:layout_width="73dp"
+        android:layout_height="35dp"
+        android:background="#d1ada8"
+        android:tag="#ff8b7c"
+        app:layout_constraintEnd_toStartOf="@+id/color4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/color2"
+        app:layout_constraintTop_toTopOf="@+id/color2" />
+
+    <View
+        android:id="@+id/color4"
+        android:layout_width="73dp"
+        android:layout_height="35dp"
+        android:background="#ffcc8d"
+        android:tag="#ff8b7c"
+        app:layout_constraintEnd_toEndOf="@+id/tagNameEditText"
+        app:layout_constraintStart_toEndOf="@+id/color3"
+        app:layout_constraintTop_toTopOf="@+id/color3" />
+
+    <TextView
+        android:id="@+id/okBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        android:text="OK"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/color4"
+        app:layout_constraintTop_toBottomOf="@+id/color4" />
+
+    <TextView
+        android:id="@+id/cancelBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="Cancel"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/okBtn"
+        app:layout_constraintTop_toTopOf="@+id/okBtn" />
+
+    <View
+        android:id="@+id/underline"
+        android:layout_width="72dp"
+        android:layout_height="4dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/dark_purple"
+        app:layout_constraintEnd_toEndOf="@+id/color1"
+        app:layout_constraintStart_toStartOf="@+id/color1"
+        app:layout_constraintTop_toBottomOf="@+id/color1" />
+</androidx.constraintlayout.widget.ConstraintLayout>
